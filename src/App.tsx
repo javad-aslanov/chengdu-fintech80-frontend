@@ -18,6 +18,7 @@ import Buttons from './pages/UiElements/Buttons';
 import DefaultLayout from './layout/DefaultLayout';
 import IncidentDetails from './pages/IncidentDetails.tsx';
 import CustomerDetails from './pages/CustomerDetails.tsx';
+import Demo from './pages/Demo.tsx';
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -43,6 +44,17 @@ function App() {
             <>
               <PageTitle title="Path-Aware Insurance Pricing" />
               <ECommerce />
+            </>
+          }
+        />
+
+        <Route
+          path="/demo"
+          element={
+            <>
+              <PageTitle title="Path-Aware Insurance Pricing" />
+
+              <Demo />
             </>
           }
         />
@@ -92,6 +104,7 @@ function App() {
             </>
           }
         />
+
         <Route
           path="/tables"
           element={
